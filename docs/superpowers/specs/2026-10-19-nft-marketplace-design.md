@@ -57,7 +57,7 @@ src/
     api/                 Axios instance and typed transport functions
     query/               query keys and cache policy
     realtime/            Socket.IO client and event reconciliation
-    domain/              ETH decimal-string calculations and validation
+    domain/              BRL decimal-string calculations and validation
   mocks/
     browser.ts           MSW startup
     handlers/            REST and Socket.IO handlers
@@ -77,7 +77,7 @@ Socket.IO events travel through `socket.io-client` and the MSW Socket.IO binding
 
 - Catalog query state belongs in the URL, survives refresh/history, resets page when a filter changes, and discards/cancels stale responses.
 - Session and cart persist across refresh. Guest cart items merge on login without exceeding edition availability.
-- ETH values stay decimal strings at transport boundaries. Domain calculations use exact integer arithmetic at a documented precision; quantities are integers.
+- BRL values stay decimal strings at transport boundaries. Domain calculations use exact integer centavos; quantities are integers.
 - Checkout revalidates quote, coupon, price, availability, and fees. If values change, show the new quote and require another confirmation.
 - Order submission carries an idempotency key. Repeating a submission recovers the same order; the same key with different content conflicts. Pending orders recover after refresh or reconnect. Confirmed and declined orders are terminal.
 - Receipts render the immutable order snapshot. Confirmed purchases remove only the purchased quantities; errors preserve the cart.

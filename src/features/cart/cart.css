@@ -1,0 +1,70 @@
+.cart-main { width: min(1180px, calc(100% - 80px)); margin: 0 auto; padding: 31px 0 90px; }
+.cart-title-row { display: flex; align-items: end; justify-content: space-between; gap: 20px; margin: 31px 0 25px; }
+.cart-title-row h1 { margin: 9px 0 0; color: #f0e7dc; font-family: Georgia,serif; font-size: clamp(35px, 4vw, 48px); font-weight: 400; letter-spacing: -.04em; }
+.cart-title-row h1 span { color: #dc9850; }
+.cart-clear-button, .cart-remove-button { padding: 7px 0; border: 0; color: #b99b7a; background: transparent; font-size: 10px; text-decoration: underline; text-underline-offset: 4px; cursor: pointer; }
+.cart-clear-button:disabled, .cart-remove-button:disabled { opacity: .55; cursor: wait; }
+.cart-layout { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(300px, .8fr); gap: 30px; align-items: start; }
+.cart-items { min-width: 0; border-top: 1px solid #443328; }
+.cart-line { display: grid; grid-template-columns: 110px minmax(0,1fr) auto; gap: 18px; padding: 18px 0; border-bottom: 1px solid #392b21; }
+.cart-line-image { width: 110px; aspect-ratio: 1; object-fit: cover; border: 1px solid #5a3c27; background: #241a13; }
+.cart-line-copy { min-width: 0; }
+.cart-line-copy .nft-collection { color: #d39859; font-size: 8px; letter-spacing: .12em; text-transform: uppercase; }
+.cart-line-copy h2 { margin: 6px 0 3px; color: #eee4d7; font-family: Georgia,serif; font-size: 22px; font-weight: 400; }
+.cart-line-copy > p { margin: 0; color: #9c8e80; font-size: 10px; }
+.cart-line-prices { display: flex; flex-direction: column; align-items: end; gap: 7px; color: #968779; font-size: 9px; text-align: right; }
+.cart-line-prices strong { color: #f0dfca; font-family: Georgia,serif; font-size: 18px; font-weight: 400; }
+.cart-quantity { display: inline-flex; align-items: center; margin-top: 12px; border: 1px solid #493528; }
+.cart-quantity button { width: 31px; height: 29px; border: 0; color: #e7b982; background: #241a13; cursor: pointer; }
+.cart-quantity button:disabled { color: #65584c; cursor: not-allowed; }
+.cart-quantity span { min-width: 29px; color: #eee4d7; font-size: 10px; text-align: center; }
+.cart-remove-button { display: block; margin-top: 2px; font-size: 9px; }
+.cart-stock-warning { max-width: 350px; margin-top: 8px !important; color: #f0a183 !important; line-height: 1.5; }
+.cart-summary { position: sticky; top: 18px; padding: 21px; border: 1px solid #493528; background: linear-gradient(145deg,#241a13,#1c1511); }
+.cart-summary h2 { margin: 8px 0 21px; color: #f0e7dc; font-family: Georgia,serif; font-size: 25px; font-weight: 400; }
+.realtime-notice { margin: -13px 0 14px; color: #9caa78; font-size: 8px; }
+.coupon-form label { display: block; margin-bottom: 7px; color: #a49586; font-size: 9px; }
+.coupon-form > div { display: flex; }
+.coupon-form input { min-width: 0; flex: 1; height: 37px; padding: 0 10px; border: 1px solid #493528; border-right: 0; color: #f0e7dc; background: #1a1410; font-size: 10px; }
+.coupon-form button { min-width: 72px; border: 1px solid #875d36; color: #e7b982; background: #2a1d13; font-size: 9px; cursor: pointer; }
+.coupon-form button:disabled { opacity: .5; cursor: not-allowed; }
+.coupon-feedback { margin: 8px 0; color: #d9a670; font-size: 9px; line-height: 1.5; }
+.cart-feedback { margin: 5px 0 0; color: #d9a670; font-size: 9px; }
+.cart-feedback-error { color: #f0a183 !important; }
+.applied-coupon { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-top: 12px; padding: 9px; border: 1px solid #57402c; color: #ddae79; font-size: 9px; }
+.applied-coupon button { border: 0; color: #e7c69f; background: transparent; font-size: 9px; text-decoration: underline; cursor: pointer; }
+.cart-totals { margin: 19px 0 0; padding: 16px 0 0; border-top: 1px solid #493528; }
+.cart-totals > div { display: flex; justify-content: space-between; gap: 12px; margin: 0 0 12px; color: #a99b8b; font-size: 10px; }
+.cart-totals dd { margin: 0; color: #e9dfd3; font-variant-numeric: tabular-nums; }
+.cart-totals .cart-grand-total { margin-top: 17px; padding-top: 14px; border-top: 1px solid #493528; color: #f0e7dc; font-size: 13px; }
+.cart-grand-total dd { color: #f3d1a9; font-family: Georgia,serif; font-size: 23px; }
+.digital-notice, .cart-stage-note { color: #8e8072; font-size: 8px; line-height: 1.6; }
+.cart-checkout-link { width: 100%; margin-top: 9px; }
+.cart-empty, .cart-state { display: grid; min-height: 340px; justify-items: center; align-content: center; padding: 25px; border: 1px solid #3b2b20; background: radial-gradient(ellipse at center,#241a13,#19130f 70%); text-align: center; }
+.cart-empty > span { display: grid; width: 46px; height: 46px; place-items: center; border: 1px solid #795632; border-radius: 50%; color: #e69a4b; font-family: Georgia,serif; font-size: 22px; }
+.cart-empty .eyebrow { margin-top: 20px; }
+.cart-empty h2, .cart-state h2 { margin: 9px 0; color: #eee4d7; font-family: Georgia,serif; font-size: 29px; font-weight: 400; }
+.cart-empty > p:not(.eyebrow), .cart-state p { max-width: 390px; color: #a99989; font-size: 10px; line-height: 1.7; }
+.cart-empty .button-primary { margin-top: 9px; padding-inline: 16px; }
+.cart-lines-skeleton { display: grid; gap: 14px; }
+.cart-line-skeleton { height: 145px; }
+.cart-summary-skeleton { min-height: 330px; }
+.shimmer { background: linear-gradient(100deg,#2a211a 20%,#3a2d22 38%,#2a211a 56%); background-size: 200% 100%; animation: shimmer 1.6s ease-in-out infinite; }
+@media(max-width: 800px) {
+  .cart-main { width: calc(100% - 48px); }
+  .cart-layout { grid-template-columns: minmax(0,1fr) minmax(250px,.8fr); gap: 20px; }
+  .cart-line { grid-template-columns: 82px minmax(0,1fr); gap: 12px; }
+  .cart-line-image { width: 82px; }
+  .cart-line-prices { grid-column: 2; flex-direction: row; align-items: center; justify-content: space-between; text-align: left; }
+}
+@media(max-width: 620px) {
+  .cart-main { width: calc(100% - 32px); padding-top: 22px; }
+  .cart-title-row { margin: 24px 0 18px; }
+  .cart-layout { grid-template-columns: 1fr; }
+  .cart-summary { position: static; }
+  .cart-line { grid-template-columns: 75px minmax(0,1fr); padding: 13px 0; }
+  .cart-line-image { width: 75px; }
+  .cart-line-copy h2 { font-size: 18px; }
+  .cart-line-prices { grid-column: 2; }
+  .cart-empty, .cart-state { min-height: 315px; padding: 18px; }
+}

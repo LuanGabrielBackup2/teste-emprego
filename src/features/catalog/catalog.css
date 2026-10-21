@@ -1,0 +1,9 @@
+.catalog-hero, .nft-card, .detail-art-frame { isolation: isolate; }
+.nft-card-link:focus-visible { outline-offset: 3px; }
+.catalog-results:focus-visible { outline: 0; }
+.catalog-add-button { width: calc(100% - 18px); min-height: 33px; margin: 0 9px 9px; border: 1px solid #76502f; color: #e5a15d; background: transparent; font-size: 9px; letter-spacing: .06em; cursor: pointer; }
+.catalog-add-button:hover:not(:disabled) { color: #17120e; background: #dc9850; }
+.catalog-add-button:disabled { opacity: .55; cursor: not-allowed; }
+.add-to-cart-control { display: grid; justify-items: start; }
+.cart-feedback { margin: 5px 0 0; color: #d9a670; font-size: 9px; }
+.cart-feedback-error { color: #f0a183 !important; }

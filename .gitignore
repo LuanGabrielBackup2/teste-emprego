@@ -1,0 +1,21 @@
+node_modules/
+dist/
+playwright-report/
+test-results/
+coverage/
+*.tsbuildinfo
+
+# Arquivos de ambiente: não publicar configurações locais ou de produção
+.env
+.env.*
+!.env.example
+
+# Variáveis locais específicas
+.env.local
+.env.*.local
+
+# Configurações locais do editor
+.vscode/
+
+# Artefatos temporários do Superpowers
+.superpowers/
